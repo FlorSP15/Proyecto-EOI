@@ -1,0 +1,723 @@
+/* ============================================== */
+ /* Author : Md. Munaim Khan
+ /* Email  : khanmail2599@gmail.com
+/* ============================================== */
+
+
+/*-------------------------
+Initial Style Start
+--------------------------*/
+
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bodybg: #000000;
+}
+
+body{
+    background: var(--bodybg);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*-------------------------
+Section style Start
+--------------------------*/
+
+.mk_wrap{
+    height: 100%;
+}
+
+.mk_wrap, .mk_text{
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.mk_text{
+    margin-top: -27em;
+}
+
+.mk_wrap .bubble{
+    border-radius: 50%;
+    float: left;
+    font-weight: 600;
+    height: .6em;
+    margin: .5em;
+    padding-top: .2em;
+    position: relative;
+    text-align: center;
+    width: .6em;
+}
+
+.mk_wrap .bubble::after{
+    content: '';
+    height: .4em;
+    position: absolute;
+    width: .4em;
+}
+
+.mk_wrap .bubble_color:nth-child(odd), 
+.mk_wrap .bubble::after{
+    animation: bubble_odd 15s alternate infinite;
+    background: #ff0000;
+    box-shadow: 0 0 20px #ff0000,
+                0 0 40px #ff0000,
+                0 0 60px #ff0000,
+                0 0 100px #ff0000;
+}
+
+.mk_wrap .bubble:nth-child(even), 
+.mk_wrap .bubble::after{
+    animation: bubble_even 15s alternate infinite;
+    background: #0000ff;
+    box-shadow: 0 0 20px #0000ff,
+                0 0 40px #0000ff,
+                0 0 60px #0000ff,
+                0 0 100px #0000ff;
+}
+
+
+/*-- H1 Style Start -------------------*/
+h1{
+    animation: jump 55s linear infinite;
+    font-size: 6em;
+    line-height: 1em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 17%;
+    width: 100%;
+}
+
+h1 small{
+    font-size: 0.5em;
+}
+
+h1 span{
+    transition: 5s ease all;
+}
+
+h1 span:nth-child(1){
+    animation: span1 3s linear infinite;
+}
+
+h1 span:nth-child(2){
+    animation: span2 4s linear infinite;
+}
+
+h1 span:nth-child(3){
+    animation: span3 5s linear infinite;
+}
+
+h1 span:nth-child(4){
+    animation: span4 6s linear infinite;
+}
+
+h1 span:nth-child(5){
+    animation: span5 7s linear infinite;
+}
+
+h1 span:nth-child(6){
+    animation: span6 8s linear infinite;
+}
+
+h1 span:nth-child(7){
+    animation: span7 9s linear infinite;
+}
+
+h1 span:nth-child(8){
+    animation: span8 10s linear infinite;
+}
+
+h1 span:nth-child(9){
+    animation: span9 11s linear infinite;
+}
+
+h1 span:nth-child(10){
+    animation: span10 12s linear infinite;
+}
+
+h1 span:nth-child(11){
+    animation: span11 13s linear infinite;
+}
+
+h1 span:nth-child(12){
+    animation: span12 14s linear infinite;
+}
+
+h1 span:nth-child(13){
+    animation: span13 15s linear infinite;
+}
+
+h1 span:nth-child(14){
+    animation: span14 16s linear infinite;
+}
+
+h1 span:nth-child(15){
+    animation: span15 17s linear infinite;
+}
+
+h1 span:nth-child(16){
+    animation: span16 18s linear infinite;
+}
+
+h1 span:nth-child(17){
+    animation: span17 19s linear infinite;
+}
+
+h1 span:nth-child(18){
+    animation: span18 20s linear infinite;
+}
+
+h1 span:nth-child(19){
+    animation: span19 21s linear infinite;
+}
+
+h1 span:nth-child(20){
+    animation: span20 22s linear infinite;
+    position: relative;
+}
+
+
+/*-- H3 Style Start -------------------*/
+h3{
+    color: #1e90ff;
+    font-size: 40px;
+    margin: 1em auto;
+    position: relative;
+    text-shadow: 0 0 20px #0000ff;
+    text-transform: uppercase;
+    width: fit-content;
+    z-index: 1;
+}
+
+.float1{
+    animation: float1 22s linear infinite;
+}
+
+.float2{
+    animation: float2 22s linear infinite;
+    position: relative;
+    top: -2.1em;
+}
+
+
+/*-------------------------
+Keyframes style start
+--------------------------*/
+
+/*-- Keyframe for rotating text 1 -------------------*/
+@keyframes float1{
+    0%{
+        color: #ffffff;
+        opacity: 0;
+        transform: scale(0);
+        transform: rotateY(160deg);
+    }
+
+    30%{
+        color: #1e90ff;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    60%{
+        color: #ffffff;
+        opacity: 0;
+        transform: rotateY(160deg);
+        transform: scale(0);
+    }
+
+    90%{
+        color: #1e90ff;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100%{
+        color: #ffffff;
+        opacity: 0;
+        transform: rotateY(160deg);
+        transform: scale(0);
+    }
+}
+
+/*-- Keyframe for rotating text 2 -------------------*/
+@keyframes float2{
+    0%{
+        color: #1e90ff;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    30%{
+        color: #ffffff;
+        opacity: 0;
+        transform: rotateY(-160deg);
+        transform: scale(0);
+    }
+
+    60%{
+        color: #1e90ff;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    90%{
+        color: #ffffff;
+        opacity: 0;
+        transform: rotateY(-160deg);
+        transform: scale(0);
+    }
+
+    100%{
+        color: #1e90ff;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*-- Keyframe for H1 text lighting effect Start -------------------*/
+@keyframes span1{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #b22222;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0000ff,
+                     0 0 20px #0000ff,
+                     0 0 40px #0000ff,
+                     0 0 80px #0000ff,
+                     0 0 160px #0000ff;
+    }
+}
+
+@keyframes span2{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #300af0;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #ff0000,
+                     0 0 20px #ff0000,
+                     0 0 40px #ff0000,
+                     0 0 80px #ff0000,
+                     0 0 160px #ff0000;
+    }
+}
+
+@keyframes span3{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #0af034;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #e8f00a,
+                     0 0 20px #e8f00a,
+                     0 0 40px #e8f00a,
+                     0 0 80px #e8f00a,
+                     0 0 160px #e8f00a;
+    }
+}
+
+@keyframes span4{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #e8f00a;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0af034,
+                     0 0 20px #0af034,
+                     0 0 40px #0af034,
+                     0 0 80px #0af034,
+                     0 0 160px #0af034;
+    }
+}
+
+@keyframes span5{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #f06a0a;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0aa7f0,
+                     0 0 20px #0aa7f0,
+                     0 0 40px #0aa7f0,
+                     0 0 80px #0aa7f0,
+                     0 0 160px #0aa7f0;
+    }
+}
+
+@keyframes span6{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #0aa7f0;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #f06a0a,
+                     0 0 20px #f06a0a,
+                     0 0 40px #f06a0a,
+                     0 0 80px #f06a0a,
+                     0 0 160px #f06a0a;
+    }
+}
+
+@keyframes span7{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #f00abe;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #25f00a,
+                     0 0 20px #25f00a,
+                     0 0 40px #25f00a,
+                     0 0 80px #25f00a,
+                     0 0 160px #25f00a;
+    }
+}
+
+@keyframes span8{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #25f00a;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #f00abe,
+                     0 0 20px #f00abe,
+                     0 0 40px #f00abe,
+                     0 0 80px #f00abe,
+                     0 0 160px #f00abe;
+    }
+}
+
+@keyframes span9{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #0ae8f0;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #f00a0a,
+                     0 0 20px #f00a0a,
+                     0 0 40px #f00a0a,
+                     0 0 80px #f00a0a,
+                     0 0 160px #f00a0a;
+    }
+}
+
+@keyframes span10{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #f00a0a;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0ae8f0,
+                     0 0 20px #0ae8f0,
+                     0 0 40px #0ae8f0,
+                     0 0 80px #0ae8f0,
+                     0 0 160px #0ae8f0;
+    }
+}
+
+@keyframes span11{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #3a0950;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0d0b4c,
+                     0 0 20px #0d0b4c,
+                     0 0 40px #0d0b4c,
+                     0 0 80px #0d0b4c,
+                     0 0 160px #0d0b4c;
+    }
+}
+
+@keyframes span12{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #0d0b4c;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #3a0950,
+                     0 0 20px #3a0950,
+                     0 0 40px #3a0950,
+                     0 0 80px #3a0950,
+                     0 0 160px #3a0950;
+    }
+}
+
+
+@keyframes span13{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #b22222;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0000ff,
+                     0 0 20px #0000ff,
+                     0 0 40px #0000ff,
+                     0 0 80px #0000ff,
+                     0 0 160px #0000ff;
+    }
+}
+
+@keyframes span14{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #300af0;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #ff0000,
+                     0 0 20px #ff0000,
+                     0 0 40px #ff0000,
+                     0 0 80px #ff0000,
+                     0 0 160px #ff0000;
+    }
+}
+
+@keyframes span15{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #0af034;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #e8f00a,
+                     0 0 20px #e8f00a,
+                     0 0 40px #e8f00a,
+                     0 0 80px #e8f00a,
+                     0 0 160px #e8f00a;
+    }
+}
+
+@keyframes span16{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #e8f00a;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0af034,
+                     0 0 20px #0af034,
+                     0 0 40px #0af034,
+                     0 0 80px #0af034,
+                     0 0 160px #0af034;
+    }
+}
+
+@keyframes span17{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #f06a0a;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #0aa7f0,
+                     0 0 20px #0aa7f0,
+                     0 0 40px #0aa7f0,
+                     0 0 80px #0aa7f0,
+                     0 0 160px #0aa7f0;
+    }
+}
+
+@keyframes span18{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #0aa7f0;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #f06a0a,
+                     0 0 20px #f06a0a,
+                     0 0 40px #f06a0a,
+                     0 0 80px #f06a0a,
+                     0 0 160px #f06a0a;
+    }
+}
+
+@keyframes span19{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #f00abe;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #25f00a,
+                     0 0 20px #25f00a,
+                     0 0 40px #25f00a,
+                     0 0 80px #25f00a,
+                     0 0 160px #25f00a;
+    }
+}
+
+@keyframes span20{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        color: #25f00a;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #f00abe,
+                     0 0 20px #f00abe,
+                     0 0 40px #f00abe,
+                     0 0 80px #f00abe,
+                     0 0 160px #f00abe;
+    }
+}
+/*-- Keyframe for H1 text lighting effect End -------------------*/
+
+/*-- Keyframe for H1 text jumping -------------------*/
+@keyframes jump{
+    0%, 10%, 30%, 50%, 70%, 90%{
+        top: -10px;
+    }
+
+    20%, 40%, 60%, 80%, 100%{
+        top: 10px;
+    }
+}
+
+/*-- Keyframe for bubble animation in the odd position -------------------*/
+@keyframes bubble_odd{
+    0%{
+        transform: translateY(-100vh) scale(3);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: translateY(100vh) scale(1);
+    }
+
+
+    30%{
+        background: #0000ff;
+        box-shadow: 0 0 20px #0000ff,
+                    0 0 40px #0000ff,
+                    0 0 60px #0000ff,
+                    0 0 100px #0000ff;
+    }
+
+    60%{
+        background: #f00a0a;
+        box-shadow: 0 0 20px #f00a0a,
+                    0 0 40px #f00a0a,
+                    0 0 60px #f00a0a,
+                    0 0 100px #f00a0a;
+    }
+
+    90%{
+        background: #00ff00;
+        box-shadow: 0 0 20px #00ff00,
+                    0 0 40px #00ff00,
+                    0 0 60px #00ff00,
+                    0 0 100px #00ff00;
+    }
+}
+
+/*-- Keyframe for bubble animation in the even position -------------------*/
+@keyframes bubble_even{
+    0%{
+        transform: translateY(-100vh) scale(3);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: translateY(100vh) scale(1);
+    }
+
+    30%{
+        background: #f00a0a;
+        box-shadow: 0 0 20px #f00a0a,
+                    0 0 40px #f00a0a,
+                    0 0 60px #f00a0a,
+                    0 0 100px #f00a0a;
+    }
+
+    60%{
+        background: #00ff00;
+        box-shadow: 0 0 20px #00ff00,
+                    0 0 40px #00ff00,
+                    0 0 60px #00ff00,
+                    0 0 100px #00ff00;
+    }
+
+    90%{
+        background: #0000ff;
+        box-shadow: 0 0 20px #0000ff,
+                    0 0 40px #0000ff,
+                    0 0 60px #0000ff,
+                    0 0 100px #0000ff;
+    }
+}
+
+
+
+/*====================================================================
+Responsive Design
+======================================================================*/
+
+/*---------------- For Small Screen ----------------*/
+@media only screen and (max-width: 700px){
+    .mk_text{
+        margin-top: -40em;
+    }
+
+    h1{
+        font-size: 3.5em;
+    }
+
+    h3{
+        font-size: 20px;
+        margin: .5em auto;
+    }
+
+    .float2{
+        top: -1.6em;
+    }
+}
