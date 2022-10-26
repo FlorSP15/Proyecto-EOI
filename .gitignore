@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+$ git clone https://github.com/munaimpro/CSS-Animation.git
